@@ -1,0 +1,39 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link type="text/css" rel="stylesheet" href="resources/sheet.css" >
+<style type="text/css">.ritz .waffle a { color: inherit; }.ritz .waffle .s0{background-color:#ffffff;text-align:left;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}</style><div class="ritz grid-container" dir="ltr"><table class="waffle" cellspacing="0" cellpadding="0"><thead><tr><th class="row-header freezebar-origin-ltr"></th><th id="87790328C0" style="width:674px" class="column-headers-background">A</th></tr></thead><tbody><tr style='height:16px;'><th id="87790328R0" style="height: 16px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 16px;">1</div></th><td class="s0" dir="ltr"><span style="font-size:10pt;font-family:Arial;color:#000000;">The MIT License<br><br>Copyright (c) 2017 Elegant<br><br>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br><br>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br><br>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span></td></tr></tbody></table></div>
+<script type='text/javascript' nonce='CjUkU6jwEgwlHld2vVK6NUpNmQM'>
+function posObj(sheet, id, row, col, x, y) {
+  var rtl = false;
+  var sheetElement = document.getElementById(sheet);
+  if (!sheetElement) {
+    sheetElement = document.getElementById(sheet + '-grid-container');
+  }
+  if (sheetElement) {
+    rtl = sheetElement.getAttribute('dir') == 'rtl';
+  }
+  var r = document.getElementById(sheet+'R'+row);
+  var c = document.getElementById(sheet+'C'+col);
+  if (r && c) {
+    var objElement = document.getElementById(id);
+    var s = objElement.style;
+    var t = y;
+    while (r && r != sheetElement) {
+      t += r.offsetTop;
+      r = r.offsetParent;
+    }
+    var offsetX = x;
+    while (c && c != sheetElement) {
+      offsetX += c.offsetLeft;
+      c = c.offsetParent;
+    }
+    if (rtl) {
+      offsetX -= objElement.offsetWidth;
+    }
+    s.left = offsetX + 'px';
+    s.top = t + 'px';
+    s.display = 'block';
+    s.border = '1px solid #000000';
+  }
+};
+function posObjs() {
+};
+posObjs();</script>

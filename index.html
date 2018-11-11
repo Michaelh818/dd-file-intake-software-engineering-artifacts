@@ -1,84 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <title>Digital Decore File Intake Software Engineering Artifacts</title>
-  <meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <link href="./assets/css/sidebar.css" rel="stylesheet">
-  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-  <script src="./assets/js/modify-bootstrap-3.1.0.js" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="./style.css" rel="stylesheet" id="style-css">
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
 
-<!-- sidebar here -->
-<body>
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <link href="./assets/css/font-awesome-4.0.3.css" rel="stylesheet">
-      <div style="  
-      /* min-width: 280px;
-      height: 25vh;
-      min-height: 200px; */
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;" class="row">
-    <div class="col-sm-4 col-md-3 sidebar">
-      <div class="mini-submenu">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-      </div>
-      <div class="list-group">
-          <span href="#" class="list-group-item active">
-              <b>Digital Decor Submenu </b>
-              <span class="pull-right" id="slide-submenu">
-                  <i class="fa fa-times"></i>
-              </span>
-          </span> 
-      
-            
-          
-          <a href="#Digital-Decore-File-Intake" class="list-group-item">Scroll Top</a>
-          <a href="#v-2.0.1" class="list-group-item">dd-file-intake-activity-diagrams</a>
-          <!-- <a href="#unit2" class="list-group-item">Unit 2</a>
-          <a href="#unit3" class="list-group-item">Unit 3</a>
-          <a href="#unit4" class="list-group-item">Unit 4</a>
-          <a href="#unit5" class="list-group-item">Unit 5</a> -->
-      </div>        
-    </div>
-  </div>
-  <div class="container">
-    <div class="container-fluid">
-        </br>
-        </br>
-        </br>
-        </br>
-        <div style="background-color:#fff" class="jumbotron">
-          <article>
-            <ul>
+<!------ Include the above in your HEAD tag ---------->
 
-                <li>
-                  <a name="Digital-Decore-File-Intake">Digital Decore File Intake</a>
-                  <ul>
-                    <li><a href="#v-2.0.1">Intake Activity Diagrams</a></li>
-                    <li><a href="#Database-UML">Database UML</a></li>
-                  </ul>
-                </li> <!-- end of dd-file-intake-v-2.0.1 -->
-            </ul> 
+<div id="wrapper">
+    <div class="overlay"></div>
 
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    Digital Decore
+                </a>
+            </li>
+            <li>
+                <a href="#top">Software Engineer Artifacts</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">MIT Sprint Spreadsheets<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Bi-Weekly Sprints</li>
+                <li><a href="#sprint1">Sprint 1</a></li>
+                <li><a href="#sprint2">Sprint 2</a></li>
+                <li><a href="#sprint3">Sprint 3</a></li>
+                <li><a href="#sprint4">Sprint 4</a></li>
+                <li><a href="#sprint5">Sprint 5</a></li>
+                <li><a href="#sprint6">Sprint 6</a></li>
+                <li><a href="#sprint7">Sprint 7</a></li>
+                <li><a href="#sprint8">Sprint 8</a></li>
+              </ul>
+            </li>
+            <!-- <li>
+                <a href="#">Sprint</a>
+            </li>
+            <li>
+                <a href="#">Events</a> -->
+            </li>
+            <!-- <li>
+                <a href="#v-2.0.1-activity-diagram-dd-file-intake.svg">Activity Diagram</a>
+            </li> -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activity Diagrams<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">dd-file-intake Application</li>
+                <li><a href="#v-2.0.1-dd-file-intake-app-activity-diagram">latest</a></li>
+                <!-- <li><a href="#v-2.0.1-dd-file-intake-app-activity-diagram">v-2.0.4</a></li>
+                <li><a href="#v-2.0.1-dd-file-intake-app-activity-diagram">v-2.0.3</a></li>
+                <li><a href="#v-2.0.1-dd-file-intake-app-activity-diagram">v-2.0.2</a></li>
+                <li><a href="#v-2.0.1-dd-file-intake-app-activity-diagram">v-2.0.1</a></li> -->
+                <li><a href="#v-2.0.0-dd-file-intake-app-activity-diagram">v-2.0.0</a></li>
+                <li class="dropdown-header">dd-file-intake Engine</li>
+                <li><a href="#v-2.0.1-dd-file-intake-engine-activity-diagram">latest</a></li>
+                <!-- <li><a href="#v-2.0.1-dd-file-intake-engine-activity-diagram">v-2.0.4</a></li>
+                <li><a href="#v-2.0.1-dd-file-intake-engine-activity-diagram">v-2.0.3</a></li>
+                <li><a href="#v-2.0.1-dd-file-intake-engine-activity-diagram">v-2.0.2</a></li>
+                <li><a href="#v-2.0.1-dd-file-intake-engine-activity-diagram">v-2.0.1</a></li> -->
+                <li><a href="#v-2.0.0-dd-file-intake-engine-activity-diagram">v-2.0.0</a></li>
+              </ul>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="https://github.com/mharoot">Follow me</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->
 
-              <!--  -->
-              <p><a name="v-2.0.1"></a></p>
-              <h2><a href="#v-2.0.1">v-2.0.1</a></h2>
-              <img src="./assets/images/dd-file-intake-activity-diagram-v-2.0.1.png">
-
-
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col"> -->
+                  <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                      <span class="hamb-top"></span>
+                      <span class="hamb-middle"></span>
+                      <span class="hamb-bottom"></span>
+                  </button>
+                <!-- </div>
             </div>
-          </article>
+        </div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <a name="top"></a>
+                    <h1> Digital Decore Software Engineering Artifacts </h1>
+                    <p> You will find Activity Diagrams, UMLs, Product Backlog, sprint spreadsheets, and other software engineering artifacts as they become available.</p>
+                </div>
+            </div>
         </div>
-      </div>	
-      <script src="./assets/js/sidebar.js" type="text/javascript"></script>
+
+        <div class="container">
+            <a name="v-2.0.1-dd-file-intake-engine-activity-diagram"></a>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1>Digital Decore File Intake activity diagram (Latest Version <b>2.0.1</b>):</h1>
+                    <p> We have been using this activity diagram since version 2.0.1 of the software. We are currently on version 2.0.5 of the software and still using the activity diagram below.</p>
+                    <div id="v-2.0.1-dd-file-intake-engine-activity-diagram"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <a name="v-2.0.0-dd-file-intake-engine-activity-diagram"></a>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1>Digital Decore File Intake activity diagram (Version <b>2.0.0</b>):</h1>
+                    <p>You could see in 2.0.0 that the engine is doing some odd things.  We addressed those issues in 2.0.1</p>
+                    <div id="v-2.0.0-dd-file-intake-engine-activity-diagram"></div>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
-</html>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<script src="./navbar.js"></script>
+<script src="./main.js"></script>
